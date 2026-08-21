@@ -1,12 +1,13 @@
 
 // This is a preprocessor directive that indicates we would like 
 // to use the contents of the iostream library.
-
+// This library allows us to write the text to and from the console.
 #include<iostream> 
 
+// A library is collection of precompiled code that can be used in a C++ program.
 /* to run a cpp program in you have to use the following command :
- * g++ your_program.cpp -o your_program 
- * your_program
+ * 1. g++ your_program.cpp -o your_program 
+ * 2. ./your_program
  * (Here g++ is the compiler for cpp and your program.cpp is input file)
  * -o stands for output exceutable file then the file name you can name it anything 
  * type the name of excetutable to run it on windows

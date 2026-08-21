@@ -19,3 +19,6 @@ int main(){
     return 0;
 } // x lifetime ends here
 // X is out of scope here
+
+
+// ATemporary Object id sn unsmed obejct that is used to hold value that is needed for short time.

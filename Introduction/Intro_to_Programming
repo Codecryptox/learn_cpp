@@ -1,0 +1,37 @@
+Computer Program : Sequence of Instructions that directs a computer what action to perform in an order.
+Programming Lang : Language used to write that computer program 
+Programming : The art of writing the Program
+Executing : When computer performs the action described by set of instruction written in the program.
+Hardware : Physiscal components like CPU, mouse, keyboard,storage devices, memory etc.
+Software : Programs designed to be executed on the hardware.
+Platform : Compatibility between hardware and software in single device.
+Portable : when a program can run on different platform or CPU architecture it is called as portable.
+
+Machine Language : It is the language in which the set of instructions are written to be understood byt the cpu.
+Instruction set : Set of all possible machine language instructions that a CPU can understand.
+Bit : It is the smallest unit in an instruction consist of only 0 and 1.
+Assembly Language : It is typically a more higher level Language for the humans to understand machine Language.
+                      e.g mov al, 0x61
+Different set of CPU architecture family like the X86, Arm64 etc.
+Low level Language : Includes Machine Language and Assembly Language 
+                    because they provide minimal abstraction for comp. architecture.
+
+               Disadvantages : Not Portable to other instruction set architecture.
+                               Requires detailed knowledge of hardware architecture itself
+                               Length of the Instructions is more for complex operations.
+
+
+High Level Language : It is language in which the programmer writes their code which is then converted into machine language
+Compiler : A program that converts High level source code into low level machine code. It generates an executable file that is run by the hardware to produce an output.
+Interpreter : A program that converts the Instructions in the source code line by line directly into the machine code that can be run by the hardware.
+
+Compiler applies code optimizations and number of analyses after converting the code into compiled version but it cannot detect dynamic optimizations.
+Interpreter typically requires more time to execute the code and it has to be run again to generate the machine code.
+
+
+Data is a piece of info that can be stored, processed and moved.
+value is single piece of data.
+Object represents a region of storage that can store the value.
+Variable refers to the object with name.
+Identifier refers to the name of the variable.
+Data type is used to dictate what type of value the object holds.

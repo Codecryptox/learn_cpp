@@ -8,6 +8,8 @@ int main(){
     int num;
     std::cin >> num;
 
-    std::cout << "Double of The Number you entered is : " << num * 2 << std::endl;
+    std::cout << "Double of " << num << " is : " << num * 2 << std::endl;
+
+    std::cout << "Triple of " << num << " is : " << num * 3 << std::endl;
     return 0;
 }

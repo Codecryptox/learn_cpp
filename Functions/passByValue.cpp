@@ -1,8 +1,12 @@
 #include<iostream>
 
-void printHi(){
-    std::cout << "Print Hi" << std::endl;
-}
+// Function parameter is a variable used in the header of the function.
+// Function argument is the value that is passed to the function when it is called.
+
+
+// when a function is called, the value of the argument is copied into the matching parameter using copy initialization.
+// This process is called pass by value. The function works with the copy of the argument, and the original argument remains unchanged.
+// function paarameters that utilize pass by value are called value parameters.
 
 void printValue(int x){ // here we are passing the argument x in the function
 
@@ -32,7 +36,7 @@ int doubleNumber(int num){
 
 int main(){
  
-    printHi();
+    // printHi();
     printValue(75);
     std::cout << addNum(4,5) << std::endl;
     std::cout << multiply(5,18) << std::endl;

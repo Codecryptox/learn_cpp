@@ -5,7 +5,12 @@ int main(){
     //std::cout prints the output to the console.
     //std::cin take the input from the user.
 
-    std::cout << "Enter Two numbers : " <<"\n";
+    /* Imprtant Note :
+       Using std::endl is often inefficient, as it actually does two jobs: it outputs a newline (moving the cursor to the next line of the console), 
+       and it flushes the buffer (which is slow).
+       If we output multiple lines of text ending with std::endl, we will get multiple flushes, which is slow and probably unnecessary.
+    */
+    std::cout << "Enter Two numbers : " << '\n';
     int x {};
     std::cin >> x ;
     int y {};
