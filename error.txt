@@ -1,0 +1,89 @@
+Syntax Error : A type of error that occurs when you do not write the statements in a program according to grammatical rules of C++ Language.
+
+example :
+#include <iostream>
+
+int main( // missing closing brace
+{
+    int 1x; // variable name can't start with number
+    std::cout << "Hi there"; << x +++ << '\n'; // extraneous semicolon, operator+++ does not exist
+    return 0 // missing semicolon at end of statement
+}
+
+
+
+Semantic Error : It is Logical type of error where program is syntactically correct but may violate the rule of C++ Language or 
+                 Program does not do what the progammer intended it to do.
+
+
+example :
+
+
+int main()
+{
+    5 = x; // x not declared, cannot assign a value to 5
+    return "hello"; // "hello" cannot be converted to an int
+}
+
+
+int main(){
+
+    int a {10};
+    int b {0};
+
+    std::cout << a << " / " << b << "=" << a/b << '\n';
+    return 0;
+}
+
+#include <iostream>
+
+int add(int x, int y) // this function is supposed to perform addition
+{
+    return x - y; // but it doesn't due to the wrong operator being used
+}
+
+int main()
+{
+    std::cout << "5 + 3 = " << add(5, 3) << '\n'; // should produce 8, but produces 2
+
+    return 0;
+}
+
+
+
+General process to debug :
+1. Find the root cause
+2. Understand the issue
+3. Find How to fix the issue.
+4. Fix the issue.
+5. Test everything compiles
+6. Check if there are any new problems.
+
+
+Some Debugging Tactics :
+
+1. Comment out your code.
+2. Add Debugging print statements.  (You can use std::cerr to print this debug statements as they are unbuffered.)
+3. Validating your code flow.
+
+A debugger is a computer program that allows the programmer to control how another program executes and examine the program state while the program is running.
+Step into : Executes the next statement in normal execution of the program and stops after that execution to examine the program state
+Step Over : It will execute the next staement line by line like step into but in case of functions It executes the complete function and then stops the execution point where the function is returned.
+Step Out : It does not only execute the next line of code but it also executes all the remaining statement inside the function and returns the control after function has ended.
+
+
+Run to cursor : This command executes the code until it reaches the line selected by your cursor so you can start debugging from that point on.
+Continue : This command runs the program normally until it reaches the end of the program or a breakpoint.
+Breakpoint : It is special command that tells the debugger to stop the execution of the program at the breakpoint when in debug mode.
+Start : This command works same as continue but it start the execution of the program fron start and when it is not in debug mode.
+
+
+The call stack is list of all the active function that have been called during the current point of execution in the program.
+The Watch window helps us to watch the value of the variable whilr the program is executing in the debug mode.
+This process of making structural changes to your code without changing its behavior is called refactoring.
+unit testing, which is a software testing method by which small units of source code are tested to determine whether they are correct.
+
+Static analysis tools are tools that analyze your code and look for semantic issues that may indicate problems with your code.
+
+A log file is a file that records events that occur in a program. The process of writing information to a log file is called logging.
+
