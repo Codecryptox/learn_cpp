@@ -1,0 +1,25 @@
+Smallest unit of data is called bit which can hold 0 or 1 value.
+Memory is organized into sequential units called as memory addresses.
+A byte can hold 8 bits of data. e.g like 01101001
+Data type defines the way compiler can identify what kind of data the memory address can hold.
+
+
+Floating point data type : Data with fractional part
+e.g float , double, long double
+
+Integer : Data with no fractional or decimal part
+e.g short int, int , long int, long long int ( both have signed and unsigned version)
+
+Char data type : a single character in text
+e.g char, wchar_t, char8_t, char16_t, char32_t
+
+std::nullptr_t : Null Pointer
+
+void : void data 
+
+Three set of types :
+Fundamental types
+Compound types
+Types by C++ STL
+
+_t defines the type it is used in modern cpp.
